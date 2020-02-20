@@ -1,0 +1,19 @@
+{
+  "name": "2-flexbox-site",
+  "version": "1.0.0",
+  "description": "fexbox recap",
+  "main": "script.js",
+  "scripts": {
+    "webpack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^7.0.27"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
