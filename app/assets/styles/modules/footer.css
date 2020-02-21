@@ -1,0 +1,11 @@
+footer {
+  background-color: $mainBlue;
+  color: white;
+}
+
+footer {
+  a {
+    display: block;
+    color: white;
+  }
+}

@@ -1,4 +1,8 @@
 import "../styles/style.css";
+import insertCurrentYear from "./modules/footer";
 
-const year = document.getElementById("year"); //footer
-year.innerText = new Date().getFullYear();
+if (module.hot) {
+  module.hot.accept();
+}
+
+insertCurrentYear();

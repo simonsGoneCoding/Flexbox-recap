@@ -1,22 +1,5 @@
-$mainBlue: #2f5572;
+@import "./base/_global.css";
+@import "./base/_mixins.css";
+@import "./base/_variables.css";
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-family: "Raleway", "Oswald", sans-serif;
-}
-
-footer {
-  background-color: $mainBlue;
-  color: white;
-}
-
-footer {
-  a {
-    display: block;
-    color: white;
-  }
-}
+@import "./modules/footer.css";
