@@ -1,11 +1,38 @@
 footer {
-  background-color: $mainBlue;
-  color: white;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-footer {
-  a {
-    display: block;
-    color: white;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, $mainBlue, #000 130%);
+  padding: 60px 0;
+
+  @mixin atSmall {
+    padding: 60px 15px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 25px;
+
+    li {
+      margin: 0 8px;
+
+      a {
+        color: white;
+        font-size: 3em;
+        cursor: pointer;
+      }
+    }
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $footerText;
+    margin-bottom: 10px;
   }
 }

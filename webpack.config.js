@@ -2,10 +2,10 @@ const path = require("path");
 
 const postCSSPlugins = [
   require("postcss-import"),
+  require("postcss-mixins"),
   require("autoprefixer"),
   require("postcss-nested"),
   require("postcss-simple-vars"),
-  require("postcss-mixins"),
   require("postcss-hexrgba")
 ];
 
@@ -22,9 +22,9 @@ module.exports = {
       server._watch("./app/**/*.html");
     },
     contentBase: path.join(__dirname, "app"),
+    host: "0.0.0.0",
     hot: true,
-    port: 3300,
-    host: "0.0.0.0"
+    port: 3000
   },
   mode: "development",
   module: {
