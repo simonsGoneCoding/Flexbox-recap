@@ -1,0 +1,10 @@
+a.btn {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  background-color: $buttonBlue;
+  padding: 20px 46px;
+  border-radius: 12px;
+  border: 1px solid white;
+  transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+}

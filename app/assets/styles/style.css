@@ -2,4 +2,6 @@
 @import "./base/_variables.css";
 @import "./base/_mixins.css";
 
-@import "./modules/footer.css";
+@import "./modules/_footer.css";
+@import "./modules/_main-hero.css";
+@import "./modules/_btn.css";
