@@ -1,0 +1,45 @@
+.gallery {
+  padding: 10px 50px;
+  background-color: #f6f6f6;
+
+  &__title {
+    color: #131633;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    width: 65%;
+    max-width: 800px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  &__grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      height: 400px;
+      padding: 5px;
+      background-size: cover;
+      background-clip: content-box;
+      background-position: center;
+      list-style-type: none;
+    }
+
+    &__small {
+      flex-basis: 40%;
+    }
+
+    &__large {
+      flex-basis: 60%;
+    }
+  }
+}
