@@ -42,4 +42,13 @@
       flex-basis: 60%;
     }
   }
+
+  @mixin atLarger {
+    &__grid {
+      &__small,
+      &__large {
+        flex-basis: 100%;
+      }
+    }
+  }
 }
