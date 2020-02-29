@@ -24,4 +24,5 @@ hr {
   height: 2px;
   background-color: $lightBlue;
   border: 0;
+  margin-bottom: 40px;
 }

@@ -1,5 +1,5 @@
 .gallery {
-  padding: 10px 50px;
+  padding: 0px 50px 10px 50px;
   background-color: #f6f6f6;
 
   &__title {
