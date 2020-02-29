@@ -1,61 +1,45 @@
 .main-hero {
-  position: relative;
-  font-size: 0;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
 
-  &__background-image {
-    display: block;
-
-    img {
-      max-height: 100vh;
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-    }
+  &__main-title,
+  &__second-title {
+    font-size: 1.7em;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 2em;
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   }
 
-  &__text-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-
-    &__main-title,
-    &__second-title {
-      font-family: Oswald;
-      font-size: 28px;
-      text-shadow: 2px 2px black;
-      margin-bottom: 60px;
-    }
-
-    &__main-title {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
+  &__main-title {
+    font-size: 3.5em;
+    margin-bottom: 16px;
   }
 
-  &__picture {
-    display: block;
-  }
-
-  .btn:hover {
-    background-color: $mainBlue;
+  a.btn:hover {
+    background-color: $lightBlue;
   }
 
   @mixin atSmall {
-    &__text-content__main-title {
-      font-size: 36px;
+    min-height: 600px;
+
+    &__main-title {
+      font-size: 2.2em;
     }
 
-    &__text-content__second-title {
-      font-size: 18px;
+    &__second-title {
+      font-size: 1.2em;
     }
 
-    .btn {
-      font-size: 18px;
-      padding: 15px 38px;
+    a.btn {
+      padding: 15px 40px;
+      font-size: 20px;
     }
   }
 }
